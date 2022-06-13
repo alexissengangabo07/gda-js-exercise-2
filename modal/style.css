@@ -129,3 +129,44 @@
     /*  ============== */
     /*  YOUR CSS  */
     /*  ==============*/
+
+        #content button {
+            padding: 10px;
+            background-color: rgb(203, 184, 98);
+            color: white;
+            border: 0px;
+            box-sizing: border-box;
+            border-radius: 5px;
+            font-size: larger;
+            cursor: pointer;
+        }
+        #content #close {
+            margin: 30% auto;
+        }
+        #content #mymodal {
+            position: absolute;
+            display: block;
+            top: 30vh;
+            left: 35vw;
+            width: 30vw;
+            height: 40vh;
+            background-color: rgb(99, 178, 56);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            border-radius: 10px;
+        }
+        #content span {
+            display: block;
+            text-align: center;
+            font-size: xx-large;
+        }
+
+        #hidelayer {
+            position: fixed;
+            top: 0%;
+            left: 0px;
+            bottom: 0px;
+            right: 0px;
+            background-color: rgba(56, 56, 57, 0.3);
+        }
