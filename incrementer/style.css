@@ -1,0 +1,131 @@
+    /*  ==== ====== */
+    /*  NAVBAR        */
+    /*  ========= */
+    
+    * {
+        box-sizing: border-box;
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+    
+    #navbar {
+        background-color: #46aa13;
+        padding: 5px 30px;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .img-site {
+        width: 50px;
+        border-radius: 50%;
+    }
+    
+    .menu {
+        font-weight: bold;
+        display: flex;
+    }
+    #menu-links {
+        display: flex;
+        gap: 30px;
+        flex-wrap: wrap;
+    }
+    .menu>ul>li{
+        list-style: none;
+        padding: 0px 0;
+    }
+    
+    .menu>ul>li>a{
+        text-decoration: none;
+        color: white;
+        padding: 30px 0;
+        transition: all 0.5s ease;
+    }
+    
+    .menu>ul>li>a:hover {
+        color: aquamarine;
+    }
+    
+    #titre-page {
+        font-size: 22px;
+        border-bottom: 2px solid gray;
+    }
+    
+    #myVideo {
+       
+        width: 100%;
+      }
+    
+      #content {
+          margin-right: 400px;
+      }
+    
+      .text-container {
+        background: rgba(0, 0, 0, 0.678);
+        color: #f1f1f1;
+        padding: 10px;
+        padding-bottom: 40px;
+        position: relative;
+        margin-top: -250px;
+      }
+    
+      .text-container>p{
+          margin-bottom: 24px;
+      }
+      
+      #myBtn {
+        width: 200px;
+        font-size: 18px;
+        font-weight: bold;
+        padding: 10px;
+        border: none;
+        background: rgb(247 224 60);;
+        color: black;
+        cursor: pointer;
+        text-decoration: none;
+      }
+      
+      #myBtn:hover {
+        background: rgb(197, 197, 2);
+        color: black;
+      }
+    
+      main {
+        margin: 20px;
+    } 
+    
+      @media screen and (min-width: 900px) {
+        .icon-mobile{
+            display: none;
+        }
+      }
+      
+      @media screen and (max-width: 900px) {
+        #content {
+            margin-top: 30px;
+            margin-right: 0;
+        }      
+        #menu-links {
+            display: none;
+        }
+        .icon-mobile {
+            margin-top: 10px;
+        }
+        .icon-mobile>a {
+            text-decoration: none;
+        }
+        .icon-mobile>a>span {
+            color: white;
+            font-size: 35px;
+        }
+        .icon-mobile>a>span:hover {
+            color: aquamarine;
+        }
+      }    
+    
+    /*  ============== */
+    /*  YOUR CSS  */
+    /*  ==============*/
