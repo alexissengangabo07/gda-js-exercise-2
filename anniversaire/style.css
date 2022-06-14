@@ -13,7 +13,8 @@
         background-image: linear-gradient(180deg, #f28bb2, #ed88ae);
         background-size: cover;
         background-repeat: no-repeat;
-        height: 100vh;
+        height: 100%;
+        padding-bottom: 40px;
     }
     
     #navbar {
@@ -112,6 +113,9 @@
         .icon-mobile {
             display: none;
         }
+        #card {
+            width: 40%;
+        }
     }
     
     @media screen and (max-width: 900px) {
@@ -135,6 +139,9 @@
         .icon-mobile>a>span:hover {
             color: aquamarine;
         }
+        #card {
+            width: 95%;
+        }
     }
     /*  ======= */
     /*  MY CSS  */
@@ -143,7 +150,6 @@
     #card {
         background-color: #ffffff;
         padding: 0 15px 10px 15px;
-        width: 50%;
         border-radius: 4px;
         margin-top: 45px;
     }
@@ -157,6 +163,7 @@
         display: flex;
         gap: 5px;
         padding: 0px;
+        margin-bottom: 20px;
     }
     
     .img {
@@ -196,4 +203,10 @@
         border-radius: 3px;
         width: 100%;
         font-size: larger;
+        cursor: pointer;
+        transition: all 1s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+    }
+    
+    #btn-clear:hover {
+        background-color: #f76da2;
     }
