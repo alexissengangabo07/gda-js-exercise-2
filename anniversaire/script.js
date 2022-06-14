@@ -18,65 +18,38 @@ icon.addEventListener('click', () => {
 });
 
 //My JS
-
-// let users = [{
-//         firstName: 'Alexandre',
-//         lastName: 'Amani Chambo',
-//         birthday: '1997-07-28',
-//         image: 'img1.jpeg'
-//     },
-//     {
-//         firstName: 'Alexis ',
-//         lastName: 'Senga Ngabo',
-//         birthday: '1997-06-20',
-//         image: 'img2.jpeg'
-//     },
-//     {
-//         firstName: 'Bonheur',
-//         lastName: 'Bushiri',
-//         birthday: '1997-01-10',
-//         image: 'img3.jpeg'
-//     },
-//     {
-//         firstName: 'Dieumerci',
-//         lastName: 'Muhindo',
-//         birthday: '1997-07-22',
-//         image: 'img4.jpeg'
-//     },
-//     {
-//         firstName: 'Doddy',
-//         lastName: 'Matabaro',
-//         birthday: '1997-04-02',
-//         image: 'img5.png'
-//     },
-//     {
-//         firstName: 'Valentin',
-//         lastName: 'Nasibu Jonas',
-//         birthday: '1997-09-17',
-//         image: 'img6.png'
-//     }
-// ];
-
 const cardBody = document.querySelector('#card-body');
+const btnClear = document.querySelector('#btn-clear');
+const d = new Date();
 
 fetch('./users.json', {
         method: 'get',
         headers: { 'Accept': '*/*' }
     })
     .then(data => data.json())
-    .then(data => data.map(utilisateur => {
-        cardBody.innerHTML += `<div class="card-item">
-                            <div class="image">
-                                <img src="../images/${utilisateur.image}" class="img" />
-                            </div>
-                            <div class="infos">
-                                <div>
-                                    <h4 class="name">${utilisateur.firstName}</h4>
-                                </div>
-                                <div class="years">
-                                    <span class="text">${utilisateur.birthday}</span>
-                                </div>
-                            </div>
-                        </div>`;
+    .then(data => data.filter(utilisateur => {
+        if (`${new Date(utilisateur.birthday).getMonth()}-${new Date(utilisateur.birthday).getDate()}` == `${d.getMonth()}-${d.getDate()}`) {
+            cardBody.innerHTML += content(utilisateur.image, utilisateur.firstName, utilisateur.lastName, utilisateur.birthday);
+        }
     }))
     .catch(err => console.error(err));
+
+btnClear.addEventListener('click', () => {
+    document.querySelector('#card').removeChild(cardBody);
+});
+
+const content = (image, firstName, lastName, birthday) => (
+    `<div class="card-item">
+            <div class="image">
+                <img src="../images/${image}" class="img" />
+            </div>
+            <div class="infos">
+                <div>
+                    <h4 class="name">${firstName} ${lastName}</h4>
+                </div>
+                <div class="years">
+                    <span class="text"><i style="margin-right: 28px;">${d.getFullYear() - new Date(birthday).getFullYear()} Years </i> ${birthday}</span>
+                </div>
+            </div>
+        </div>`
+);
