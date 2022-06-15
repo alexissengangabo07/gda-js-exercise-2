@@ -94,9 +94,22 @@
       }
     
       main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        text-align: center;
         margin: 20px;
     } 
     
+    input{
+        margin-top: 200px;
+        width: 250px;
+    }
+    button{
+        text-align: center;
+        width: 200px;
+        margin-top: 20px;
+    }
       @media screen and (min-width: 900px) {
         .icon-mobile{
             display: none;
