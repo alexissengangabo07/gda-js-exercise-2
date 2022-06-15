@@ -145,7 +145,7 @@
         }
         #content #mymodal {
             position: absolute;
-            display: block;
+            display: none;
             top: 30vh;
             left: 35vw;
             width: 30vw;
@@ -164,9 +164,12 @@
 
         #hidelayer {
             position: fixed;
+            display: none;
             top: 0%;
             left: 0px;
             bottom: 0px;
             right: 0px;
             background-color: rgba(56, 56, 57, 0.3);
         }
+
+        
