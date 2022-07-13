@@ -32,6 +32,7 @@
         display: flex;
         gap: 30px;
         flex-wrap: wrap;
+        color:  ;
     }
     .menu>ul>li{
         list-style: none;
@@ -52,17 +53,14 @@
     #titre-page {
         font-size: 22px;
         border-bottom: 2px solid gray;
+        color: ;
     }
     
     #myVideo {
        
         width: 100%;
       }
-    
-      #content {
-          margin-right: 400px;
-      }
-    
+
       .text-container {
         background: rgba(0, 0, 0, 0.678);
         color: #f1f1f1;
@@ -99,7 +97,19 @@
         justify-content: space-around;
         text-align: center;
         margin: 20px;
+    
     } 
+    section{
+        display: flex;
+        flex-direction: column;
+        gap : 120px;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     
     input{
         margin-top: 200px;
@@ -107,8 +117,22 @@
     }
     button{
         text-align: center;
-        width: 200px;
+        width: 300px;
         margin-top: 20px;
+        padding: 10px;
+        font-size: 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    button:hover{
+        text-align: center;
+        width: 300px;
+        margin-top: 20px;
+        padding: 10px;
+        font-size: 1.1rem;
+        background-color: antiquewhite;
+        box-shadow: 10px 10px -5px black;
     }
       @media screen and (min-width: 900px) {
         .icon-mobile{
