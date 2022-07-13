@@ -1,6 +1,6 @@
-/*  ============= */
-/*  PAGE  CHRONO*/
-/*  ===========  */
+/*  ==================*/
+/*  PAGE  ANNIVERSAIRE */
+/*  =================  */
 
 const icon = document.querySelector('.mdi-menu');
 const links = document.querySelector('#menu-links');
@@ -29,7 +29,7 @@ fetch('./users.json', {
     .then(data => data.json())
     .then(data => data.filter(utilisateur => {
         if (`${new Date(utilisateur.birthday).getMonth()}-${new Date(utilisateur.birthday).getDate()}` == `${d.getMonth()}-${d.getDate()}`) {
-            cardBody.innerHTML += content(utilisateur.image, utilisateur.firstName, utilisateur.lastName, utilisateur.birthday);
+           cardBody.innerHTML += content(utilisateur.image, utilisateur.firstName, utilisateur.lastName, utilisateur.birthday);
         }
     }))
     .catch(err => console.error(err));

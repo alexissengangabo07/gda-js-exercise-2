@@ -1,37 +1,37 @@
 [{
         "firstName": "Alexandre",
         "lastName": "Amani Chambo",
-        "birthday": "1997-06-15",
+        "birthday": "1997-07-15",
         "image": "img1.jpeg"
     },
     {
         "firstName": "Alexis ",
         "lastName": "Senga Ngabo",
-        "birthday": "1997-06-14",
+        "birthday": "1997-07-13",
         "image": "img2.jpeg"
     },
     {
         "firstName": "Bonheur",
         "lastName": "Bushiri",
-        "birthday": "1996-06-14",
+        "birthday": "1996-07-13",
         "image": "img3.jpeg"
     },
     {
         "firstName": "Dieumerci",
         "lastName": "Muhindo",
-        "birthday": "1999-06-14",
+        "birthday": "1999-07-14",
         "image": "img4.jpeg"
     },
     {
         "firstName": "Doddy",
         "lastName": "Matabaro",
-        "birthday": "2002-06-15",
+        "birthday": "2002-07-15",
         "image": "img5.png"
     },
     {
         "firstName": "Valentin",
         "lastName": "Nasibu Jonas",
-        "birthday": "1997-06-15",
+        "birthday": "1997-07-15",
         "image": "img6.png"
     }
 ]

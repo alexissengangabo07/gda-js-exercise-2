@@ -9,6 +9,7 @@ const button = document.querySelector('button')
 const input = document.querySelector('.TexBackground')
 const body = document.querySelector('body')
 
+
 let counter =  0
 
 // Function Pour Parcourir les couleurs
@@ -107,6 +108,20 @@ button.addEventListener('click', () => {
 
         browseGameColor(this)
 });
+button.addEventListener('click', function(e){
+
+    body.style.background = 'red'
+    body.style.background = 'green'
+    body.style.background = 'white'
+    body.style.background = 'yellow'
+    body.style.background = 'blue'
+    body.style.background = 'black'
+    body.style.background = 'orange'
+    body.style.background = 'violet'
+    body.style.background = 'gray'
+    body.style.background = 'marron'
+  
+})
 
 
 
