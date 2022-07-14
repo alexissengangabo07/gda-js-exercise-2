@@ -1,0 +1,29 @@
+export const list=[
+    {
+        Nom:"BENJAMIN",
+        Des:[
+            ''
+        ],
+        Dte:""
+    },
+    {
+        Nom:"ALEXANDRE",
+        Des:"",
+        Dte:""
+    },
+    {
+        Nom:"ALEX",
+        Des:"",
+        Dte:""
+    },
+    {
+        Nom:"DODDY",
+        Des:"",
+        Dte:""
+    },
+    {
+        Nom:"",
+        Des:"",
+        Dte:""
+    },
+];
