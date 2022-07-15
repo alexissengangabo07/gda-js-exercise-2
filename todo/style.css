@@ -1,147 +1,207 @@
-    /*  ==== ====== */
-    /*  NAVBAR        */
-    /*  ========= */
-    
-    * {
-        box-sizing: border-box;
-    }
-    
-    body {
-        margin: 0;
-        padding: 0;
-        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 100%;
-        padding-bottom: 40px;
-    }
-    
-    #navbar {
-        background-color: #46aa13;
-        padding: 5px 30px;
-        display: flex;
-        justify-content: space-between;
-    }
-    
-    .img-site {
-        width: 50px;
-        border-radius: 50%;
-    }
-    
-    .infos {
-        padding: 20px;
-    }
-    
-    .menu {
-        font-weight: bold;
-        display: flex;
-    }
-    
-    #menu-links {
-        display: flex;
-        gap: 30px;
-        flex-wrap: wrap;
-    }
-    
-    .menu>ul>li {
-        list-style: none;
-        padding: 0px 0;
-    }
-    
-    .menu>ul>li>a {
-        text-decoration: none;
-        color: white;
-        padding: 30px 0;
-        transition: all 0.5s ease;
-    }
-    
-    .menu>ul>li>a:hover {
-        color: aquamarine;
-    }
-    
-    #titre-page {
-        font-size: 22px;
-        border-bottom: 2px solid black;
-    }
-    
-    #myVideo {
-        width: 100%;
-    }
-    
-    #content {
-        display: flex;
-        justify-content: center;
-    }
-    
-    .text-container {
-        background: rgba(0, 0, 0, 0.678);
-        color: #f1f1f1;
-        padding: 10px;
-        padding-bottom: 40px;
-        position: relative;
-        margin-top: -250px;
-    }
-    
-    .text-container>p {
-        margin-bottom: 24px;
-    }
-    
-    #myBtn {
-        width: 200px;
-        font-size: 18px;
-        font-weight: bold;
-        padding: 10px;
-        border: none;
-        background: rgb(247 224 60);
-        ;
-        color: black;
-        cursor: pointer;
-        text-decoration: none;
-    }
-    
-    #myBtn:hover {
-        background: rgb(197, 197, 2);
-        color: black;
-    }
-    
-    main {
-        margin: 20px;
-    }
-    
-    @media screen and (min-width: 900px) {
-        .icon-mobile {
-            display: none;
-        }
-        #card {
-            width: 40%;
-        }
-    }
-    
-    @media screen and (max-width: 900px) {
-        #content {
-            margin-top: 30px;
-            margin-right: 0;
-        }
-        #menu-links {
-            display: none;
-        }
-        .icon-mobile {
-            margin-top: 10px;
-        }
-        .icon-mobile>a {
-            text-decoration: none;
-        }
-        .icon-mobile>a>span {
-            color: white;
-            font-size: 35px;
-        }
-        .icon-mobile>a>span:hover {
-            color: aquamarine;
-        }
-        #card {
-            width: 95%;
-        }
-    }
-    /*  ======= */
-    /*  MY CSS  */
-    /*  ======*/
+/*  ==== ====== */
+/*  NAVBAR        */
+/*  ========= */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  padding-bottom: 40px;
+}
+
+#navbar {
+  background-color: #46aa13;
+  padding: 5px 30px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.img-site {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.infos {
+  padding: 20px;
+}
+
+.menu {
+  font-weight: bold;
+  display: flex;
+}
+
+#menu-links {
+  display: flex;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.menu > ul > li {
+  list-style: none;
+  padding: 0px 0;
+}
+
+.menu > ul > li > a {
+  text-decoration: none;
+  color: white;
+  padding: 30px 0;
+  transition: all 0.5s ease;
+}
+
+.menu > ul > li > a:hover {
+  color: aquamarine;
+}
+
+#titre-page {
+  font-size: 22px;
+  border-bottom: 2px solid black;
+}
+
+#myVideo {
+  width: 100%;
+}
+
+#content {
+  display: flex;
+  justify-content: center;
+}
+
+.text-container {
+  background: rgba(0, 0, 0, 0.678);
+  color: #f1f1f1;
+  padding: 10px;
+  padding-bottom: 40px;
+  position: relative;
+  margin-top: -250px;
+}
+
+.text-container > p {
+  margin-bottom: 24px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  font-weight: bold;
+  padding: 10px;
+  border: none;
+  background: rgb(247 224 60);
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#myBtn:hover {
+  background: rgb(197, 197, 2);
+  color: black;
+}
+
+main {
+  margin: 20px;
+}
+
+@media screen and (min-width: 900px) {
+  .icon-mobile {
+    display: none;
+  }
+  #card {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  #content {
+    margin-top: 30px;
+    margin-right: 0;
+  }
+  #menu-links {
+    display: none;
+  }
+  .icon-mobile {
+    margin-top: 10px;
+  }
+  .icon-mobile > a {
+    text-decoration: none;
+  }
+  .icon-mobile > a > span {
+    color: white;
+    font-size: 35px;
+  }
+  .icon-mobile > a > span:hover {
+    color: aquamarine;
+  }
+  #card {
+    width: 95%;
+  }
+}
+/*  ======= */
+/*  MY CSS  */
+/*  ======*/
+#content {
+  display: flex;
+  margin: auto;
+  width: 450px;
+  padding: 20px;
+  box-shadow: 0px 10px 40px gray;
+  border-radius: 5px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+}
+.head {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+}
+#entre-list {
+  padding: 10px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  border: none;
+  background-color: #111;
+  color: #fff;
+  width: 360px;
+}
+.add-list {
+  border: none;
+  background-color: rgb(92, 246, 187);
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  width: 50px;
+}
+.taches {
+  width: 100%;
+  margin-top: 30px;
+}
+.item {
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+.item p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #111;
+  letter-spacing: 1px;
+  width: auto;
+  display: flex;
+}
+p i:last-child {
+  margin-left: 200px;
+}
+
+.item.completed p {
+  text-decoration: line-through;
+  color: black;
+}
