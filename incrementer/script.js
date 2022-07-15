@@ -26,30 +26,30 @@ const counterValue = document.querySelector(".counter-value");
 let counteur = 0;
 let min = 0;
 let max = 31;
-let isReset = false;
+
+
 
 
 init.addEventListener('click', function(){
-    if(isReset == false){
-        counterValue.innerText = counteur.reset();
+    counteur=0;
+        counterValue.innerText = counteur;
 
-    }
 })
 
 
 decrement.addEventListener('click', function(){
 
-    if(counteur >= min){
-        counterValue.innerText = counteur;
-        counteur --;
-    };
+    // if(counteur >= min){
+        counterValue.innerText =counteur --; 
+    
+    // };
 });
 
 increse.addEventListener("click", function(){
-    if(counteur < max){
+    // if(counteur < max){
         counterValue.innerText = counteur;
         counteur ++;
-    }
+    
 });
 
 
