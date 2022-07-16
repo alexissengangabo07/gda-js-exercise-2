@@ -22,18 +22,12 @@ let input = document.querySelector("#entre-list");
 let add = document.querySelector(".add-list");
 let tache = document.querySelector(".taches");
 
-input.addEventListener("keyup", () => {
-  if (input.value.trim() != 0) {
-    add.classList.add("active");
-  } else {
-    add.classList.remove("active");
-  }
-});
+
 add.addEventListener("click", () => {
   if (input.value.trim() != 0) {
     let newItem = document.createElement("div");
     newItem.classList.add("item");
-    newItem.innerHTML = `<p><input type="checkbox" class="coche"> ${input.value}<p><div><i class="fa-solid fa-xmark"></i></div>`;
+    newItem.innerHTML = `<p><input type="checkbox" class="coche"> ${input.value}<p><div><i class="fa-solid fa-trash-can"></i></div>`;
     tache.appendChild(newItem);
     input.value = "";
   } else {
@@ -47,7 +41,7 @@ tache.addEventListener("click", (e) => {
 });
 
 tache.addEventListener("click", (e) => {
-  if (e.target.classList.contains("fa-xmark")) {
+  if (e.target.classList.contains("fa-trash-can")) {
     e.target.parentElement.parentElement.remove();
   }
 });
