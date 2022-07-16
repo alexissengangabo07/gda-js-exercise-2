@@ -22,13 +22,7 @@ let input = document.querySelector("#entre-list");
 let add = document.querySelector(".add-list");
 let tache = document.querySelector(".taches");
 
-input.addEventListener("keyup", () => {
-  if (input.value.trim() != 0) {
-    add.classList.add("active");
-  } else {
-    add.classList.remove("active");
-  }
-});
+
 add.addEventListener("click", () => {
   if (input.value.trim() != 0) {
     let newItem = document.createElement("div");
