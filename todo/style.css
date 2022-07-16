@@ -117,9 +117,19 @@ main {
 }
 
 @media screen and (max-width: 900px) {
-  #content {
+  div#content {
     margin-top: 30px;
-    margin-right: 0;
+    width: 80vw;
+    margin: auto;
+  }
+  input#entre-list {
+    padding: 10px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+    border: none;
+    background-color: #111;
+    color: #fff;
+    width: 100%;
   }
   #menu-links {
     display: none;
@@ -155,6 +165,8 @@ main {
   display: flex;
   flex-direction: column;
 }
+@media (max-width) {
+}
 .head {
   display: grid;
   grid-template-columns: 4fr 1fr;
@@ -183,19 +195,20 @@ main {
 .item {
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 0.5px solid gray;
 }
 .item p {
   font-size: 16px;
-  font-weight: 500;
+  font-weight: bolder;
   color: #111;
   letter-spacing: 1px;
   width: auto;
   display: flex;
+  gap: 5px;
 }
 p i:last-child {
   margin-left: 200px;
