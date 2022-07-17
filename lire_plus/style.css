@@ -129,3 +129,53 @@
     /*  ============== */
     /*  YOUR CSS  */
     /*  ==============*/
+
+    #content{
+        background-color: rgb(67, 21, 139);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content__container{
+        background-color: #fff;
+        width: 80%;
+        padding: 2rem;
+        gap: 1.3rem;
+        
+        display: grid;
+        grid-template-columns: 0.3fr 0.7fr;
+    }
+
+    .content__right>article{
+            display: grid;
+            grid-template-columns:1fr; 
+            margin-bottom: 1rem;
+            border: 1px solid black;
+                     
+    }
+    .article__head{
+        display:flex;
+        justify-content: left;
+        align-items: center;
+        gap:1rem;
+        border-bottom: 1px solid black;
+    }
+    .text{
+        max-width: 80%;
+        overflow: hidden;
+        display: none;
+        padding: 10px;
+    }
+    .content__right-icon{
+        background-color: grey;
+        width: 1.7rem;
+        height:1.7rem;
+        border-radius: 50%;
+        font-size: 1.3rem;
+        text-align: center;
+        color: red;
+        font-weight: bold;
+        
+    }
