@@ -159,7 +159,7 @@ main {
   margin: auto;
   width: 450px;
   padding: 20px;
-  box-shadow: 0px 10px 40px gray;
+  box-shadow: 0px 10px 40px rgba(138, 141, 139, 0.898);
   border-radius: 5px;
   background-color: #fff;
   display: flex;
@@ -217,4 +217,7 @@ p i:last-child {
 .item.completed p {
   text-decoration: line-through;
   color: black;
+}
+input[type="checkbox"] {
+accent-color: green;
 }
