@@ -21,7 +21,7 @@
         background-color: #46aa13;
         padding: 5px 30px;
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-start;
     }
     
     .img-site {
@@ -158,6 +158,8 @@
 }
 
 #object{
+    margin: auto 0;
+    padding: auto;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
@@ -186,7 +188,9 @@ a{
     text-align: center;
 }
 a:hover{
-    border-left: 5px solid rgb(18, 180, 180);
+    width:fit-content;
+    box-sizing: border-box;
+    border-left: 2px solid rgb(18, 180, 180);
     color:rgb(18, 180, 180)
 }
 
@@ -197,8 +201,8 @@ a:hover{
 #nom{
     background: #f5f5f1b2;
     width: 15%;
-    border-radius: 3px;
-    border: 1px solid #f5f5f1b2 ; 
+    border-radius: 1px;
+    border: 2px solid #f5f5f1b2 ; 
     font-size: 16px;
     text-align: center;
 }
@@ -206,4 +210,6 @@ a:hover{
     font-size: 14px;
     
 }
-
+.des{
+    width: 500px;
+}
