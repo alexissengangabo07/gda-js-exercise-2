@@ -1,0 +1,23 @@
+[
+    {
+        "nom":"BENJAMIN",
+        "description": "Concepteur et devellopeur Web et Mobile il a debute sa formation en developpement web et mobile aus de Goma Digital Academie en 2022, d'orgine congoalise",
+        "date":"Mai 2022 a Goma Digital Academy"
+    },
+    {
+        "nom":"ALEX",
+        "description":"Specialiste en developpement web et mobile aus de Goma Digital Academie en 2022, d'orgine congoalise",
+        "date":"Mars 2022 a Goma Digital Academy"
+    },
+    {
+        "nom":"SAMUEL",
+        "description":"debute sa formation en developpement web et mobile aus de Goma Digital Academie en 2022, d'orgine congoalise",
+        "date":"MaI 2021 a Goma Digital Academy"
+    },
+    {
+        "nom":"DODDY",
+        "description":"Programmeur web et mobile aus de Goma Digital Academie en 2022, d'orgine congoalise",
+        "date":"Mars 2020 a Goma Digital Academy"
+    }
+]
+
