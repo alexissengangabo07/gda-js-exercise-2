@@ -1,3 +1,5 @@
+
+
 const icon = document.querySelector('.mdi-menu');
 const links = document.querySelector('#menu-links');
 
@@ -14,3 +16,19 @@ icon.addEventListener('click', () => {
    afficherMenu()
 });
 
+// vérification age
+
+let btnValide = document.querySelector("#btn-valide");
+
+function verifieAge(){
+    let age = document.querySelector("#age").value;
+    if (age >= 18){
+        alert("vous êtes majeur")
+    }else{
+        alert("vous êtes mineur") 
+    }
+}
+
+btnValide.addEventListener("click", () => {
+    verifieAge()
+})
