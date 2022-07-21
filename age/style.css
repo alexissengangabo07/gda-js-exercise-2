@@ -1,3 +1,5 @@
+
+
     /*  ==== ====== */
     /*  NAVBAR        */
     /*  ========= */
@@ -96,6 +98,31 @@
       main {
         margin: 20px;
     } 
+
+    /* formulaire de vérification */
+    #content{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    #age{
+        width: 250px;
+        height: 50px;
+        font-size: 30px;
+        color: black;
+        font-weight: bold;
+       
+
+    }
+    #btn-valide{
+        width: 250px;
+        height: 30px;
+        border-radius: 1px solid;
+        background-color: rebeccapurple;
+        color: whitesmoke;
+        font-size: 20px;
+    }
     
       @media screen and (min-width: 900px) {
         .icon-mobile{
